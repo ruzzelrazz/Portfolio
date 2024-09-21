@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ruzzelrazz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <style>
+        body{
+          background-color: #FEE140;
+background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+
+
+
+
+
+
+        }
+       
+        .container-fluid{
+          background-color: #FEE140;
+background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+
+
+            font-size: 30px;
+
+        }
+        .rounded{
+            margin-top: 50px;
+        }
+        .intro{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .navbar{
+          background-color: #FEE140;
+background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+
+
+
+
+        }
+
+        .container {
+          display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image{
+  max-width: 5px;
+    max-height:15%;
+    float: left;
+}
+
+.text {
+  font-size: 20px;
+    padding-left: 20px;
+    padding-top: 20%;
+    float: left;
+    text-shadow: 2px 2px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+   
+  
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  transition: width 2s; 
+}
+.profile-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-description h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.profile-description p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.tech-stack-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.tech-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.tech-item:hover {
+    transform: scale(1.05);
+}
+
+.tech-item h3 {
+    margin: 0 0 10px;
+    color: #FA709A;
+}
+
+.tech-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.skills {
+    padding: 50px 0;
+    background: #FEE140;
+    background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+}
+
+.tech-stack-title {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px #FA709A;
+}
+
+.tech-stack-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tech-item {
+    flex: 1 1 calc(33% - 40px);
+    min-width: 250px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.tech-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.tech-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #FA709A;
+}
+
+.tech-item h3 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: #FA709A;
+    font-weight: bold;
+}
+
+.tech-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+        
+      
+
+       
+    </style>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand img-fluid" href="index.html" style="font-size: 30px;">Razz |</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Socials
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://github.com/ruzzelrazz">Github</a></li>
+                  <li><a class="dropdown-item" href="https://www.instagram.com/ruzzelrazz/">Instagram</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://www.facebook.com/jawnrussel20/">Facebook</a></li>
+                </ul>
+              </li>
+          </div>
+        </div>
+      </nav>
+
+      <div class="profile-container">
+        <div class="profile-photo">
+            <img src="razz.jpg" alt="razz">
+        </div>
+        <div class="profile-description">
+            <h2>John Russel Vicente</h2>
+            <p>2nd Year BSIT Student</p>
+        </div>
+    </div>
+
+    <div class="skills">
+      <h1 class="tech-stack-title">Current Tech Stack</h1>
+      <div class="tech-stack-container">
+          <div class="tech-item">
+              <div class="tech-icon">
+                  <!-- Placeholder for an icon or graphic (can be replaced with actual icons) -->
+                  <span>☕</span>
+              </div>
+              <h3>Java</h3>
+              <p>Proficient in Java for object-oriented programming, building desktop applications, and backend services.</p>
+          </div>
+          <div class="tech-item">
+              <div class="tech-icon">
+                  <span>💾</span>
+              </div>
+              <h3>MySQL</h3>
+              <p>I use MySQL for database management, designing schemas, and performing complex queries.</p>
+          </div>
+          <div class="tech-item">
+              <div class="tech-icon">
+                  <span>🐘</span>
+              </div>
+              <h3>PHP</h3>
+              <p>PHP for server-side scripting, developing dynamic websites, and integrating with databases.</p>
+          </div>
+          <div class="tech-item">
+              <div class="tech-icon">
+                  <span>🎨</span>
+              </div>
+              <h3>Bootstrap</h3>
+              <p>Familiar with Bootstrap for responsive web design, creating user-friendly interfaces, and rapid prototyping.</p>
+          </div>
+          <div class="tech-item">
+              <div class="tech-icon">
+                  <span>🔷</span>
+              </div>
+              <h3>C#</h3>
+              <p>Knowledgeable in C# for developing Windows applications, game development, and working with .NET frameworks.</p>
+          </div>
+          <div class="tech-item">
+              <div class="tech-icon">
+                  <span>🎮</span>
+              </div>
+              <h3>Unity</h3>
+              <p>Competent in Unity for game development, creating interactive 3D environments, and programming with C#.</p>
+          </div>
+      </div>
+  </div>
+  
+  
+  
+  
+  
+
+
+
+
+    
+ 
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+
+
+    </script>
+  </body>
+</html>
