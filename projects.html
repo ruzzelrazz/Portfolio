@@ -1,14 +1,12 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ruzzelrazz</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
     <style>
-     body{
+         body{
           background-color: #FEE140;
 background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
 
@@ -37,40 +35,109 @@ background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
         .navbar{
           background-color: #FEE140;
 background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+
+
+
+
+        }
+
+        .project-section {
+            padding: 40px 0;
+        }
+
+        .card {
+            border: none;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            max-height: 300px;
+            object-fit: cover;
+            border-bottom: 3px solid #FA709A;
+        }
+
+        .card-title {
+            font-size: 22px;
+            margin-top: 15px;
+            color: #333;
+        }
+
+        .project-title {
+            text-align: center;
+            color: #333;
+            margin-bottom: 50px;
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
         }
     </style>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand img-fluid" href="index.html" style="font-size: 30px;">Razz |</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" style="font-size: 30px;">Razz |</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="projects.html">Projects</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Socials
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="https://github.com/ruzzelrazz">Github</a></li>
-                  <li><a class="dropdown-item" href="https://www.instagram.com/ruzzelrazz/">Instagram</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="https://www.facebook.com/jawnrussel20/">Facebook</a></li>
-                </ul>
-              </li>
-          </div>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Socials
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://github.com/ruzzelrazz">Github</a></li>
+                        <li><a class="dropdown-item" href="https://www.instagram.com/ruzzelrazz/">Instagram</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="https://www.facebook.com/jawnrussel20/">Facebook</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-      </nav>
-      <a href="mashead.free.nf">
-      <img src="mashhead.jpeg" class="img-thumbnail img-fluid" alt="..." style="max-width: 600px;max-height:15%; margin-left: 80px; margin-top: 100px;">
+    </div>
+</nav>
 
-    </a>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-     </script>
-  </body>
+<h1 class="project-title">College Projects</h1>
+
+<div class="container project-section">
+    <div class="row justify-content-center">
+        <div class="col-md-5 d-flex justify-content-center mb-4">
+            <div class="card w-100">
+                <a href="#">
+                    <img src="mashhead.jpeg" class="card-img-top" alt="Mashhead Main Banner">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">MashHead Studios</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 d-flex justify-content-center mb-4">
+            <div class="card w-100">
+                <img src="logo.jpg" class="card-img-top" alt="Burger Blitz Logo">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Burger Blitz</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
